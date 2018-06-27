@@ -13,5 +13,7 @@ public interface ClientService {
 	public List<Client> getAllClient();
 
 	public void deleteClient(int id);
+	
+	public Client traduClient(int id);
 
 }
