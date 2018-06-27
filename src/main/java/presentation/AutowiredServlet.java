@@ -16,7 +16,7 @@ public class AutowiredServlet extends HttpServlet {
 	
 	protected AutowireCapableBeanFactory ctx;
 	
-	//récupération du contexte de Spring?
+	//récupération du contexte des beans Spring?
 	public void init() throws ServletException {
 		WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
 		ctx = context.getAutowireCapableBeanFactory();

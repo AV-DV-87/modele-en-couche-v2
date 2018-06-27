@@ -20,7 +20,6 @@
     	</description>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:///spring-dispatcher-servlet.xml</param-value>
-		
 	</context-param>
 	<!-- Bootstrap the root application context as usual using ContextLoaderListener 
 	Nécessite de mettre la dépendances à Spring web car le listener écoute le lancement
@@ -28,4 +27,5 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
 </web-app>

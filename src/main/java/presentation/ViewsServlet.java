@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import model.Client;
 import service.ClientService;
@@ -24,7 +25,8 @@ public class ViewsServlet extends AutowiredServlet {
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(ViewsServlet.class);
 	private static final long serialVersionUID = 1L;
-
+	
+	@Autowired
 	private ClientService service;
 
 //	public ViewsServlet() {
